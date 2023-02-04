@@ -11,7 +11,7 @@ function StatusList({ statusList }) {
 	return (
 		<ul className='status-list'>
 			{/* <Button/> */}
-			{statusList.map((status, index) => (
+			{statusList?.map((status, index) => (
 				<StatusElement
 					key={index}
 					id={status.id}

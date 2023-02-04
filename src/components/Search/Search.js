@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdSearch } from 'react-icons/md';
+import "./Search.css"
 
 const Search = ({ handleSearchStatus, handleSearchType }) => {
 
