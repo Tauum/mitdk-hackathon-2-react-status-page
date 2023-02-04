@@ -1,0 +1,56 @@
+.service-information{
+
+    max-width: 800px;
+    margin: 1em auto;
+
+    h1, p{
+        color: white;
+        margin: 1em auto;
+        text-align: center;
+    }
+
+    h1{
+
+    }
+
+    p{
+
+    }
+
+    .filter-types{
+        display: flex;
+    }
+
+    .filter-types > *{
+        border-radius: 10px;
+        padding: 5px;
+        width: 150px;
+        margin:4em;
+        color: black;
+        justify-content: space-between;
+        border: 2px solid;
+        border-color: #ffffff;
+        
+        p{
+            color: black;
+        }
+    }
+
+    .filter-none{
+        background-color: #ffff;
+    }
+    .filter-live{
+        background-color: #b4fe8a;
+    }
+    .filter-semi-operational{
+        background-color: #fef68a;
+
+    }
+    .filter-offline{
+        background-color: #fea18a;
+
+    }
+    .filter-unknown{
+        background-color: #b6b6b6;
+    }
+}

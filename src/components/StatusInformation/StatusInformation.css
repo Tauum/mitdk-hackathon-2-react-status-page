@@ -1,0 +1,40 @@
+.service-information {
+  max-width: 800px;
+  margin: 1em auto;
+}
+.service-information h1, .service-information p {
+  color: white;
+  margin: 1em auto;
+  text-align: center;
+}
+.service-information .filter-types {
+  display: flex;
+}
+.service-information .filter-types > * {
+  border-radius: 10px;
+  padding: 5px;
+  width: 150px;
+  margin: 4em;
+  color: black;
+  justify-content: space-between;
+  border: 2px solid;
+  border-color: #ffffff;
+}
+.service-information .filter-types > * p {
+  color: black;
+}
+.service-information .filter-none {
+  background-color: white;
+}
+.service-information .filter-live {
+  background-color: #b4fe8a;
+}
+.service-information .filter-semi-operational {
+  background-color: #fef68a;
+}
+.service-information .filter-offline {
+  background-color: #fea18a;
+}
+.service-information .filter-unknown {
+  background-color: #b6b6b6;
+}/*# sourceMappingURL=StatusInformation.css.map */
