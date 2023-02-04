@@ -1,0 +1,97 @@
+.previous-status-search-container{
+	margin-top: 2em;
+}
+
+.previous-search {
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 5px;
+	max-width: 500px;
+	margin: 2em auto;
+	margin-top: 0;
+	color: black;
+}
+
+.previous-search input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+
+.previous-search input:focus {
+	outline: none;
+}
+
+.previous-search-type{
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 8px;
+	max-width: 270px;
+	margin: 2em auto;
+	margin-top: 0;
+	color: black;
+	justify-content: space-between;
+}
+
+.type-element{
+	border-radius: 10px;
+	padding: 5px;
+	max-width: 40px;
+	margin-top: 0;
+	color: black;
+	justify-content: space-between;
+	border: 2px solid;
+	border-color: #ffffff;
+}
+
+.tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+  
+	position: absolute;
+	z-index: 1;
+	top: 91.5%;
+	margin-left: -70px;
+  }
+  
+
+
+.type-fully-operational{
+	background-color: #b4fe8a;
+}
+.type-fully-operational:hover .tooltiptext {
+	visibility: visible;
+  }
+.type-semi-operational{	
+	background-color: #fef68a;
+}
+.type-semi-operational:hover .tooltiptext {
+	visibility: visible;
+  }
+.type-offline{
+	background-color: #fea18a;
+}
+.type-offline:hover .tooltiptext {
+	visibility: visible;
+  }
+.type-unknown{
+	background-color: #b6b6b6;
+}
+.type-unknown:hover .tooltiptext {
+	visibility: visible;
+  }
+.type-reset{
+	background-color: #ffffff;
+}
+.type-reset:hover .tooltiptext {
+	visibility: visible;
+  }

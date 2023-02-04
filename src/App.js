@@ -16,6 +16,8 @@ const App = () => {
 
 	const [previousSearchText, setPreviousSearchText] = useState('');
 	const [previousSearchDate, setPreviousSearchDate] = useState('');
+
+	const [previousSearchType, setPreviousSearchType] = useState(false);
 	
     const [statusList, setStatusList] = useState([])
     const [previousStatusList, setPreviousStatusList] = useState([])
@@ -61,6 +63,7 @@ const App = () => {
 				<StatusPreviousSearch
 				handlePreviousSearchStatus={setPreviousSearchText}
 				handlePreviousSearchDate={setPreviousSearchDate}
+				handlePreviousSearchType={setPreviousSearchType}
 				/>
 				<StatusPreviousList previousStatusList={previousStatusList}/>
 			</div>
