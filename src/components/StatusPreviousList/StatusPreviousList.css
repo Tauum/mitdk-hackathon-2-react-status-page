@@ -1,1 +1,16 @@
-/*# sourceMappingURL=StatusPreviousList.css.map */
+.status-previous-list {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2em;
+  margin: 2em auto;
+  margin-top: 6em;
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.384);
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=StatusPreviousList.css.map */

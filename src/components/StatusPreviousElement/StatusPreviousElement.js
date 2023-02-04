@@ -1,11 +1,13 @@
 import React from 'react'
 import "./StatusPreviousElement.css"
 
-function StatusPreviousElement() {
+function StatusPreviousElement({id, title, message, timeStamp}) {
   return (
     <div>
-        StatusPreviousElement
-        
+       <button className="accordion">{title} - {timeStamp}</button>
+      <div className="panel">
+        <p>{message}</p>
+      </div>
     </div>
   )
 }

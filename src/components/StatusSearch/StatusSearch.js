@@ -1,11 +1,11 @@
 import React from 'react';
 import { MdSearch } from 'react-icons/md';
-import "./Search.css"
+import "./StatusSearch.css"
 
 const Search = ({ handleSearchStatus, handleSearchType }) => {
 
 	return (
-		<div className='search-container'>
+		<div className='status-search-container'>
 			<div className='search'>
 				<MdSearch className='search-icons' size='1.3em' />
 				<input

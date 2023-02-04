@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"StatusPreviousList.css"}
+{"version":3,"sources":["StatusPreviousList.scss","StatusPreviousList.css"],"names":[],"mappings":"AAAA;EACC,gBAAA;EACA,kBAAA;EACA,iBAAA;EACA,YAAA;EAEA,gBAAA;EACA,eAAA;EAEA,mDAAA;EACA,uBAAA;ACDD;;ADIA;EACC,qBAAA;EACA,SAAA;EACA,UAAA;ACDD","file":"StatusPreviousList.css"}

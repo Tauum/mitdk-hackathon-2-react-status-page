@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"StatusPreviousElement.css"}
+{"version":3,"sources":["StatusPreviousElement.scss","StatusPreviousElement.css"],"names":[],"mappings":"AAAA,0EAAA;AACA;EACI,sBAAA;EACA,WAAA;EACA,eAAA;EACA,aAAA;EACA,WAAA;EACA,gBAAA;EACA,YAAA;EACA,aAAA;EACA,gBAAA;ACCJ;;ADEE,0IAAA;AACA;EACE,sBAAA;ACCJ;;ADEE,uDAAA;AACA;EACE,eAAA;EACA,uBAAA;EACA,aAAA;EACA,gBAAA;ACCJ","file":"StatusPreviousElement.css"}
