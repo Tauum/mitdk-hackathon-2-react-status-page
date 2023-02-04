@@ -101,21 +101,10 @@
 	background-color: #b6b6b6;
 
 }
-
-
+    
 .status:hover{
     transition: transform .6s; /* Animation */
     transform: scale(1.02);
-}
-
-.notify {
-	background-color: #ffffff;
-	border: none;
-	border-radius: 15px;
-	padding: 5px 10px 5px 10px;
-    transition: transform .6s; /* Animation off */
-    transform: scale(1);
-    max-width: 120px;
 }
 
 .notify:hover {	
@@ -124,4 +113,8 @@
     transition: transform .6s; /* Animation */
     transform: scale(1.02);
     font-style: bold;
+}
+
+.status-container{
+    font-size: 1em;
 }

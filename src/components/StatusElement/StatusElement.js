@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import "./StatusElement.css"
 
 
@@ -13,8 +14,8 @@ function StatusElement({id, container, statusCode, message, timeStamp}) {
 
     className={
       statusCode == 200 ? 'status status-live' : 
-      statusCode == 403 ? 'status status-warning' :
-      statusCode == 500 ? 'status status-offline' : "status status-unknown"
+      statusCode == 403 ? 'status status-warning ' :
+      statusCode == 500 ? 'status status-offline ' : "status status-unknown"
     }
 
     >
@@ -32,9 +33,9 @@ function StatusElement({id, container, statusCode, message, timeStamp}) {
       <br/>
 
       {statusCode != 200 ? 
-        <button onClick={handleNotify} className="notify">
+        <Button onClick={handleNotify} className="shadow btn" variant="light">
           notify on change
-        </button> 
+        </Button> 
         :
         <div></div>
       }

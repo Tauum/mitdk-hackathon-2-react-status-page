@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = ({ handleToggleDarkMode }) => {
 	return (
-		<div className='header'>
+		<div className='header shadow'>
 			<span>
 				<img src="/image/landingPage-logo.svg" alt="company logo" className='d-inline mr-2 nav-logo'/>
 			</span>
