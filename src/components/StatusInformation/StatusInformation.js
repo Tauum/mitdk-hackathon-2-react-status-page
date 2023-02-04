@@ -4,7 +4,7 @@ import "./StatusInformation.css"
 function StatusInformation() {
   return (
     <div className='service-information'>
-        <h1>Service status</h1>
+        <h2>Service status</h2>
         <p>
         An operational status page is a web page that provides real-time 
         information on the current status of a company's systems and services. 
@@ -18,30 +18,14 @@ function StatusInformation() {
 
         <br/>
         <p>
-            Below you can search for a specific service via its service name.
-            Alternatively you may also search or refine searching with the service's status type which are as follows:
+            Below you may refine results for services by name.
+            <br/>
+            You may also may also refine searching by a services status.
+            <br/><br/>
+            Furthermore, while using a mobile device, you may click notify me on a non-fully operating service
+            to recieve notifications for the purpose of allowing users to track a paticular needed service 
+            for when it is again fully operational.
         </p>
-
-        <div className='filter-types'>
-            <div className='filter-none'>
-                <p>White</p>
-            
-            </div>
-            <div className='filter-live'>
-                <p>Green</p>
-            </div>
-            <div className='filter-semi-operational'>
-                <p>Yellow</p>
-            </div>
-            <div className='filter-offline'>
-                <p>Red</p>
-            </div>
-            <div className='filter-unknown'>
-                <p>Black</p>
-            </div>
-        </div>
-
-
         
     </div>
   )

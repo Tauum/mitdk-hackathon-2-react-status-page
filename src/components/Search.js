@@ -19,23 +19,27 @@ const Search = ({ handleSearchStatus, handleSearchType }) => {
 
 				<div className="type-element type-reset">
 					<input type="radio" value="Reset" name="search-type" defaultChecked />
+					<span className="tooltiptext">Reset status</span>
 				</div>
 				
 				<div className="type-element type-fully-operational">
-					
 					<input type="radio" value="Fully-Operational" name="search-type"/>
+					<span className="tooltiptext">Only show fully operational services</span>
 				</div>
 
 				<div className="type-element type-semi-operational">
 					<input type="radio" value="Semi-Operational" name="search-type"/>
+					<span className="tooltiptext">Only show semi operational services</span>
 				</div>
 
 				<div className="type-element type-offline">
 					<input type="radio" value="Offline" name="search-type"/>
+					<span className="tooltiptext">Only show offline services</span>
 				</div>
 
 				<div className="type-element type-unknown">
 					<input type="radio" value="Unknown" name="search-type"/>
+					<span className="tooltiptext">Only show unknown services</span>
 				</div>
 
 			</div>
