@@ -6,14 +6,7 @@ function StatusInformation() {
     <div className='service-information'>
         <h2>Service status</h2>
         <p>
-        An operational status page is a web page that provides real-time 
-        information on the current status of a company's systems and services. 
-        It serves as a centralized source of information for customers, stakeholders and employees, 
-        allowing them to quickly check the availability and performance of key services and infrastructure. 
-        The status page typically includes information such as current service uptime and downtime, 
-        scheduled maintenance windows, and known issues. 
-        It is designed to provide transparency and help stakeholders understand the impact of any issues and outages, 
-        and keep them informed about the status of systems and services that are critical to their business.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac bibendum sapien. Nulla euismod nibh ut egestas luctus. Sed lacus sem, congue sit amet orci eget, dapibus facilisis risus. Duis turpis diam, volutpat ac rhoncus sit amet, tincidunt ut ante. In vitae diam scelerisque felis imperdiet placerat rutrum ac quam. Proin convallis semper tempus. Quisque varius lectus nunc, auctor venenatis sem fringilla eget. Morbi et tempor ipsum, ut aliquet sapien. Phasellus sit amet enim nec est tempus tempus in sit amet quam. In fringilla fermentum ultricies. Nulla nec purus lectus. Integer scelerisque sollicitudin ipsum id accumsan. Duis pharetra vehicula lectus nec pulvinar. Aenean sit amet pretium elit. Pellentesque at pharetra urna. Curabitur tincidunt velit a nulla auctor facilisis.
         </p>
 
         <br/>
