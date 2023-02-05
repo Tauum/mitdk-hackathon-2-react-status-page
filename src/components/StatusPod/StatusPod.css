@@ -16,6 +16,10 @@
   margin-top: 0.2em;
   margin-bottom: 0.2em;
 }
+.status-pod .btn {
+  background-color: #fd4365;
+  color: white;
+}
 
 .status:hover {
   transition: transform 0.6s; /* Animation */

@@ -23,6 +23,13 @@
     -webkit-box-shadow: 0px 0px 0px 10px rgb(233, 233, 233), 0px 0px 16px 0px rgba(0,0,0,0.32);
     -moz-box-shadow: 0px 0px 0px 10px rgb(233, 233, 233), 0px 0x 16px 0px rgba(0,0,0,0.32);
     box-shadow: 0px 0px 0px 10px rgb(233, 233, 233), 0px 0px 16px 0px rgba(0,0,0,0.32);
+
+
+    .btn{
+        background-color: #fd4365;
+
+        color: white;
+    }
 }
     
 .status:hover{
@@ -41,3 +48,4 @@
 .status-container{
     font-size: 1em;
 }
+
