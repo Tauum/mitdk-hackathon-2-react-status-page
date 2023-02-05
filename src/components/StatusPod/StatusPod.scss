@@ -1,0 +1,61 @@
+
+
+.status-pod{
+    margin: 1em;
+	padding: 1rem;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+    transition: transform .6s; /* Animation off */
+    transform: scale(1);
+
+    h1,h2, p{
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+    }
+
+    border-color: #ffffff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 0px 10px rgb(233, 233, 233), 0px 0px 16px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 0px 0px 10px rgb(233, 233, 233), 0px 0x 16px 0px rgba(0,0,0,0.32);
+    box-shadow: 0px 0px 0px 10px rgb(233, 233, 233), 0px 0px 16px 0px rgba(0,0,0,0.32);
+
+}
+
+.status-live {
+	background-color: #b4fe8a;
+}
+
+.status-warning {
+	background-color: #fef68a;
+}
+
+.status-offline {
+	background-color: #fea18a;
+}
+
+.status-unknown {
+	background-color: #b6b6b6;
+
+}
+    
+.status:hover{
+    transition: transform .6s; /* Animation */
+    transform: scale(1.02);
+}
+
+.notify:hover {	
+	background-color: #969696;
+    color: white;
+    transition: transform .6s; /* Animation */
+    transform: scale(1.02);
+    font-style: bold;
+}
+
+.status-container{
+    font-size: 1em;
+}

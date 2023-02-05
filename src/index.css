@@ -16,7 +16,9 @@ body {
 }
 
 .app-container{
-	background-color: rgb(255, 49, 87);
+	background-color: #ff3157;
+	/* background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(237,24,24,1) 0%, rgba(255,49,87,1) 100%); */
+	background-repeat: none;
 	padding-bottom: 4em;
 	overflow: hidden;
 	margin: 0 auto;
@@ -57,12 +59,12 @@ body {
 }
 
 .dark-mode .app-container 
-.status-list{
+.status-pods{
 	background-color: rgb(75, 72, 72);
 }
 
 .dark-mode .app-container 
-.status-previous-list{
+.status-previous-pods{
 	background-color: rgb(75, 72, 72);
 }
 

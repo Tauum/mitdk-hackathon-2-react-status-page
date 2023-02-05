@@ -14,7 +14,7 @@ const Search = ({ handleSearchStatus, handleSearchType }) => {
 					placeholder='type to search...'
 				/>
 			</div>
-			
+
 			<div className='search-type'
 				onChange={(event) => handleSearchType(event.target.value) }>
 
