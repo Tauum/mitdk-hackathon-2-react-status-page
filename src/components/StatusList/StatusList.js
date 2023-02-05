@@ -5,13 +5,12 @@ import "./StatusList.css"
 function StatusList({ statusList }) {
 
 	useEffect(() => {
-		console.log("inside statuslist",statusList)
+		console.log("inside statuslist", statusList)
 	}, [statusList])
 
 	return (
 		<ul className='status-list' >
 			{statusList?.map((status, x) => (
-				<div>
 				<StatusElement
 					key={x}
 					id={status.id}
@@ -21,7 +20,6 @@ function StatusList({ statusList }) {
 					timeStamp={status.timeStamp}
 					className="shadow"
 				/>
-				</div>
 			))}
 		</ul>
 	)
