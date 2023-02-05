@@ -49,11 +49,15 @@ const App = () => {
 				<StatusPods statusPods={statusPods} />
 
 				<StatusPreviousInformation/>
+
+				<StatusSearch 
+				handleSearchStatus={setSearchText}
+				handleSearchType={setSearchType} />
+
 				<StatusPreviousSearch
-				handlePreviousSearchStatus={setPreviousSearchText}
 				handlePreviousSearchDate={setPreviousSearchDate}
-				handlePreviousSearchType={setPreviousSearchType}
 				/>
+				
 				<StatusPreviousList previousStatusList={previousStatusList}/>
 			</div>
 		</div>

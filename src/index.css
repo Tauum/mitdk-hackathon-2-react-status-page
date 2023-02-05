@@ -64,9 +64,15 @@ body {
 }
 
 .dark-mode .app-container 
-.status-previous-pods{
+.status-previous-list{
 	background-color: rgb(75, 72, 72);
 }
+
+.dark-mode .app-container 
+.status-list{
+	background-color: rgb(75, 72, 72);
+}
+
 
 
 .dark-mode-button {

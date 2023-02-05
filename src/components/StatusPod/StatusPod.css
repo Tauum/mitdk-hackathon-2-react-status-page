@@ -49,3 +49,22 @@
 .status-container {
   font-size: 1em;
 }/*# sourceMappingURL=StatusPod.css.map */
+
+
+
+
+.progress-live {
+  background-color: #b4fe8a;
+}
+
+.progress-warning {
+  background-color: #fef68a;
+}
+
+.progress-offline {
+  background-color: #fea18a;
+}
+
+.progress-unknown {
+  background-color: #b6b6b6;
+}

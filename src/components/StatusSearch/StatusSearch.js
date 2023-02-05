@@ -44,6 +44,10 @@ const Search = ({ handleSearchStatus, handleSearchType }) => {
 				</div>
 
 			</div>
+
+			<div  className='search-type'>
+				<input type="range" className='input-range' min="0" max="4" step="1"/>
+			</div>
 		</div>
 	);
 };

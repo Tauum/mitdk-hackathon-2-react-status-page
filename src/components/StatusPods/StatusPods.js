@@ -9,7 +9,6 @@ function StatusPods({ statusPods, }) {
   
   const [selectedPod, setSelectedPod] = useState(null)
 
-
   return (
 
     <div className='status-pods'>
