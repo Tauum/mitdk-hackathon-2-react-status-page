@@ -43,6 +43,7 @@ function StatusPod({ statusPod, selectedPod }) {
       } 
       min={0}
       max={100}
+      animated 
       className={
         placeholderVal === 1 ? 'progress status-live' : 
         placeholderVal === 2 ? 'progress-warning ' :
@@ -61,7 +62,7 @@ function StatusPod({ statusPod, selectedPod }) {
       <br />
       {selectedPod === null &&
         <Button className="shadow btn" variant="light">
-          View
+          View components
         </Button>
       }
     </div>
