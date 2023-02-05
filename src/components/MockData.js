@@ -2,7 +2,7 @@ export const statusData =
     [
     {
         id:1,
-        parent:"user" ,
+        parent:"User" ,
         pods:
         [
             {id: 3, container:"User-profile-store", statusCode:"500", message:"Offline", timeStamp:"2022-01-01:04:06:05" },
@@ -13,7 +13,7 @@ export const statusData =
     ,
     {
         id:2,
-        parent:"mailbox" ,
+        parent:"Mailbox" ,
         pods:
         [
             {id: 5, container:"User-profile-reindexer", statusCode:"200", message:"Fully operational", timeStamp:"2022-01-01:04:06:05" },

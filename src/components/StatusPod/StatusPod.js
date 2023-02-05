@@ -22,19 +22,27 @@ function StatusPod({ statusPod, selectedPod }) {
     <div className='status-pod'>
       <h2 className=''>{statusPod.parent}</h2>
       <p>{statusPod.pods.length} Services</p>
+      <br/>
       <p>
-      Overall health:
+      Overall health status:
+      <br/> <br/>
         {
-        placeholderVal === 1 ? ' Fully Functional' : 
-        placeholderVal === 2 ? ' Operational' :
+        placeholderVal === 1 ? ' Fully Operational' : 
+        placeholderVal === 2 ? ' Semi Operational' :
         placeholderVal === 3 ? ' Downtime' : 
         " Unknown"
         }
       </p>
       
-      <ProgressBar now={placeholderVal} 
+      <ProgressBar now={
+        placeholderVal === 1 ? 100 :
+        placeholderVal === 2 ? 75 :
+        placeholderVal === 3 ? 50 :
+        placeholderVal === 4 ? 25 :
+        0
+      } 
       min={0}
-      max={4}
+      max={100}
       className={
         placeholderVal === 1 ? 'progress status-live' : 
         placeholderVal === 2 ? 'progress-warning ' :
@@ -57,6 +65,7 @@ function StatusPod({ statusPod, selectedPod }) {
         </Button>
       }
     </div>
+
   )
 }
 
