@@ -9,6 +9,8 @@ function StatusPreviousElement({ id, title, message, timeStamp }) {
       <Accordion className="shadow previous-status-accordian" >
         <Card className='card'>
           <Card.Header>
+
+            {/* bind this toggle colour to the severity of the status update */}
             <CustomToggle eventKey="0">{title} - {timeStamp}</CustomToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
