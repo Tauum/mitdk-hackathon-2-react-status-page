@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import StatusElement from '../StatusElement/StatusElement'
-import Test2 from '../test2/Test2'
 import "./StatusList.css"
-import { motion, AnimatePresence } from "framer-motion"
-import { Frame, useMotionValue, useTransform } from "framer-motion"
 
 function StatusList({ statusList }) {
 
 	useEffect(() => {
 		console.log("inside statuslist",statusList)
 	}, [statusList])
-
-const [selectedId, setSelectedId] = useState(null)
 
 	return (
 		<ul className='status-list' >

@@ -6,7 +6,6 @@ import StatusList from './components/StatusList/StatusList';
 import StatusPreviousSearch from './components/StatusPreviousSearch/StatusPreviousSearch';
 import StatusPreviousInformation from './components/StatusPreviousInformation/StatusPreviousInformation';
 import StatusPreviousList from './components/StatusPreviousList/StatusPreviousList';
-import Test2 from './components/test2/Test2';
 import StatusPods from './components/StatusPods/StatusPods';
 
 const App = () => {
@@ -103,11 +102,9 @@ const App = () => {
 				<StatusInformation/>
 				<StatusSearch 
 				handleSearchStatus={setSearchText}
-				handleSearchType={setSearchType}
-				 />
+				handleSearchType={setSearchType} />
 
 				{/* <StatusList statusList={statusList}/> */}
-				{/* <Test2 statusPods={statusList}/> */}
 
 				<StatusPods statusPods={statusPods} />
 
