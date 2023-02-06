@@ -9,11 +9,9 @@ import StatusPods from './components/StatusPods/StatusPods';
 import { previousStatusData, statusData } from './components/MockData';
 const App = () => {
 
-	const [searchText, setSearchText] = useState('');
-	const [searchType, setSearchType] = useState(false);
 	const [darkMode, setDarkMode] = useState(false);
 
-
+	const [searchType, setSearchType] = useState(false);
 	const [previousSearchText, setPreviousSearchText] = useState('');
 	const [previousSearchDate, setPreviousSearchDate] = useState('');
 	const [previousSearchType, setPreviousSearchType] = useState(false);
@@ -39,14 +37,12 @@ const App = () => {
 				<Header handleToggleDarkMode={setDarkMode} />
 				<StatusInformation/>
 				<StatusSearch 
-				handleSearchStatus={setSearchText}
 				handleSearchType={setSearchType} />
 
 				<StatusPods statusPods={statusPods} />
 				<StatusPreviousInformation/>
 
 				<StatusSearch 
-				handleSearchStatus={setSearchText}
 				handleSearchType={setSearchType} />
 
 				<StatusPreviousSearch

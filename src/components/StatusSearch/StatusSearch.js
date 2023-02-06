@@ -2,18 +2,10 @@ import React from 'react';
 import { MdSearch } from 'react-icons/md';
 import "./StatusSearch.css"
 
-const Search = ({ handleSearchStatus, handleSearchType }) => {
+const Search = ({ handleSearchType }) => {
 
 	return (
 		<div className='status-search-container'>
-			<div className='search'>
-				<MdSearch className='search-icons' size='1.3em' />
-				<input
-					onChange={(event) => handleSearchStatus(event.target.value) }
-					type='text'
-					placeholder='type to search...'
-				/>
-			</div>
 
 			<div className='search-type'
 				onChange={(event) => handleSearchType(event.target.value) }>
