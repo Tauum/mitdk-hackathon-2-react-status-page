@@ -11,13 +11,15 @@
   border-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0px 0px 0px 10px rgb(233, 233, 233), 0px 0px 16px 0px rgba(0, 0, 0, 0.32);
+  transition: transform 0.6s; /* Animation off */
+  transform: scale(1);
 }
 .status-pod h1, .status-pod h2, .status-pod p {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
 }
 
-.status:hover {
+.status-pod:hover {
   transition: transform 0.6s; /* Animation */
   transform: scale(1.02);
 }
