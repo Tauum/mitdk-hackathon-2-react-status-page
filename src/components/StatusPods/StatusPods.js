@@ -16,7 +16,7 @@ function StatusPods({ statusPods, }) {
   };
 
   const [searchText, setSearchText] = useState('');
-	const [searchType, setSearchType] = useState(false);
+  const [searchType, setSearchType] = useState(false);
 
   return (
 
@@ -25,9 +25,9 @@ function StatusPods({ statusPods, }) {
         <motion.li key={index}
           layoutId={statusPod.id} onClick={() => setSelectedPod(statusPod)}>
 
-          <StatusPod key={index} statusPod={statusPod} 
-          setSelectedPod={setSelectedPod} showPodModal={showPodModal} 
-          setShowPodModal={setShowPodModal}
+          <StatusPod key={index} statusPod={statusPod}
+            setSelectedPod={setSelectedPod} showPodModal={showPodModal}
+            setShowPodModal={setShowPodModal}
           />
 
         </motion.li>
@@ -38,25 +38,20 @@ function StatusPods({ statusPods, }) {
           <>
             <div className="card text-center shadow">
               <div className="card-header">
-                <CloseButton onClick={handleClosePodModal}/>
-                </div>
+                <CloseButton onClick={handleClosePodModal} />
+              </div>
               <div className="card-body">
-                  {/* <StatusSearch
-                  handleSearchStatus={setSearchText}
-                  handleSearchType={setSearchType}
-                  /> */}
-
                 <h2>{selectedPod.parent}</h2>
-              <AnimatePresence>
-                {selectedPod && (
-                  <motion.div layoutId={selectedPod.id} className="selected-pod">
-                    <StatusList statusList={selectedPod.pods}/>
-                    <motion.button onClick={handleClosePodModal} variant="primary" className='btn shadow modal-close'>
-                      Close
-                    </motion.button>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+                <AnimatePresence>
+                  {selectedPod && (
+                    <motion.div layoutId={selectedPod.id} className="selected-pod">
+                      <StatusList statusList={selectedPod.pods} />
+                      <motion.button onClick={handleClosePodModal} variant="primary" className='btn shadow modal-close'>
+                        Close
+                      </motion.button>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             </div>
           </>}

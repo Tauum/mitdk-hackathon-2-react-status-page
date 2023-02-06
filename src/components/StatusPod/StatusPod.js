@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, ProgressBar } from 'react-bootstrap'
 import "./StatusPod.css"
 
@@ -9,12 +9,18 @@ function StatusPod({ statusPod, setSelectedPod, setShowPodModal}) {
     return Math.floor(Math.random() * max);
   }
 
-  var placeholderVal = getRandomInt(4)
+  // var placeHolderValue;
+
+  const [placeHolderValue, setplaceHolderValue] = useState(0)
 
   const loadModal = () => {
     setSelectedPod(statusPod)
     setShowPodModal(true)
   }
+
+  useEffect(() => {
+    setplaceHolderValue(getRandomInt(4))
+  },[])
 
   // const reduced = statusPod.pods //bind this to the aggregated status codes
   // lets say fully-operational is 10
@@ -32,34 +38,34 @@ function StatusPod({ statusPod, setSelectedPod, setShowPodModal}) {
       Overall health status:
       <br/> <br/>
         {
-        placeholderVal === 1 ? ' Fully Operational' : 
-        placeholderVal === 2 ? ' Semi Operational' :
-        placeholderVal === 3 ? ' Downtime' : 
+        placeHolderValue === 1 ? ' Fully Operational' : 
+        placeHolderValue === 2 ? ' Semi Operational' :
+        placeHolderValue === 3 ? ' Downtime' : 
         " Unknown"
         }
       </p>
       
       <ProgressBar now={
-        placeholderVal === 1 ? 100 :
-        placeholderVal === 2 ? 75 :
-        placeholderVal === 3 ? 50 :
-        placeholderVal === 4 ? 25 :
+        placeHolderValue === 1 ? 100 :
+        placeHolderValue === 2 ? 75 :
+        placeHolderValue === 3 ? 50 :
+        placeHolderValue === 4 ? 25 :
         0
       } 
       min={0}
       max={100}
       animated 
       className={
-        placeholderVal === 1 ? 'progress status-live' : 
-        placeholderVal === 2 ? 'progress-warning ' :
-        placeholderVal === 3 ? 'progress-offline ' : 
+        placeHolderValue === 1 ? 'progress status-live' : 
+        placeHolderValue === 2 ? 'progress-warning ' :
+        placeHolderValue === 3 ? 'progress-offline ' : 
         "progress-unknown"
       }
 
       striped variant={
-        placeholderVal == 1 ? 'success' : 
-        placeholderVal == 2 ? 'warning' :
-        placeholderVal == 3 ? 'danger' : 
+        placeHolderValue == 1 ? 'success' : 
+        placeHolderValue == 2 ? 'warning' :
+        placeHolderValue == 3 ? 'danger' : 
           "info"
         }  
       />
