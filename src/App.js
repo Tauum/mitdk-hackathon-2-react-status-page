@@ -33,18 +33,6 @@ const App = () => {
 		setStatusList(statusListData)
     },[])
 	
-
-	useEffect(() => {
-		console.log("sp",statusPods)
-	}
-	,[statusPods])
-
-	useEffect(() => {
-		console.log("sl",statusList)
-	}
-	,[statusPods])
-
-
 	return (
 		<div className={`${darkMode && 'dark-mode'}`}>
 			<div className='app-container'>
