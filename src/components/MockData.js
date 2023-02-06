@@ -16,10 +16,10 @@ export const statusData =
         parent:"Mailbox" ,
         pods:
         [
-            {id: 4, container:"Recieve emails", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
-            {id: 5, container:"Search emails", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
-            {id: 6, container:"Send emails", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
-            {id: 7, container:"Forward emails", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
+            {id: 4, container:"Recieve-emails", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
+            {id: 5, container:"Search-emails", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
+            {id: 6, container:"Send-emails", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
+            {id: 7, container:"Forward-emails", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
         ]
     }
     ,
@@ -28,10 +28,10 @@ export const statusData =
         parent:"Login" ,
         pods:
         [  
-            {id: 8, container:"Log in", statusCode:"200", timeStamp:"2022-01-01:04:01:01" },
-            {id: 9, container:"Change passwords", statusCode:"403", timeStamp:"2022-01-01:04:04:02" },
-            {id: 10, container:"Login in other mailbox", statusCode:"", timeStamp:"2022-01-01:04:04:02" },
-            {id: 11, container:"Update Preferences", statusCode:"200",timeStamp:"2022-01-01:04:04:02" },
+            {id: 8, container:"Login", statusCode:"200", timeStamp:"2022-01-01:04:01:01" },
+            {id: 9, container:"Change-passwords", statusCode:"403", timeStamp:"2022-01-01:04:04:02" },
+            {id: 10, container:"Login-in-other-mailbox", statusCode:"", timeStamp:"2022-01-01:04:04:02" },
+            {id: 11, container:"Update-Preferences", statusCode:"200",timeStamp:"2022-01-01:04:04:02" },
         ]
         
     }
@@ -41,8 +41,8 @@ export const statusData =
         parent:"System" ,
         pods:
         [  
-            {id:12, container:"System Status", statusCode:"200", timeStamp:"2022-01-01:04:04:02" },
-            {id:12, container:"Server Status", statusCode:"200",timeStamp:"2022-01-01:04:04:02" },
+            {id:12, container:"System-Status", statusCode:"200", timeStamp:"2022-01-01:04:04:02" },
+            {id:12, container:"Server-Status", statusCode:"200",timeStamp:"2022-01-01:04:04:02" },
         ]
         
     }
@@ -52,10 +52,10 @@ export const statusData =
         parent:"Admin Portal" ,
         pods:
         [
-            {id: 13, container:"Login", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
-            {id: 14, container:"Create branch", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
-            {id: 15, container:"Delete branch", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
-            {id: 16, container:"Edit branch", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
+            {id: 13, container:"LoginAdmin", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
+            {id: 14, container:"Create-branch", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
+            {id: 15, container:"Delete-branch", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
+            {id: 16, container:"Edit-branch", statusCode:"200", timeStamp:"2022-01-01:04:06:05" },
         ]
     }
     ,
