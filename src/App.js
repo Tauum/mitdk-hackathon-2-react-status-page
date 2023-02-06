@@ -50,8 +50,6 @@ const App = () => {
 					<StatusList statusList={statusList}/>
 				}
 
-
-				
 				<StatusPreviousInformation/>
 
 				<StatusSearch 

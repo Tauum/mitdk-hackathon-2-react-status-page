@@ -10,7 +10,7 @@
   transform: scale(1);
   border-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0px 0px 0px 10px rgb(233, 233, 233), 0px 0px 16px 0px rgba(0, 0, 0, 0.32);
+  border-left: 15px solid;
   transition: transform 0.6s; /* Animation off */
   transform: scale(1);
 }
@@ -34,4 +34,20 @@
 
 .status-container {
   font-size: 1em;
+}
+
+.status-pod-fully-operational {
+  border-color: #6FCF97;
+}
+
+.status-pod-semi-operational {
+  border-color: #FFC42D;
+}
+
+.status-pod-offline {
+  border-color: #ff3157;
+}
+
+.status-pod-unknown {
+  border-color: #000000;
 }/*# sourceMappingURL=StatusPod.css.map */

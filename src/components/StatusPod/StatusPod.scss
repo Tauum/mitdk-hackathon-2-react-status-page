@@ -1,5 +1,3 @@
-
-
 .status-pod{
     margin: 1em;
 	padding: 1rem;
@@ -20,9 +18,8 @@
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    -webkit-box-shadow: 0px 0px 0px 10px rgb(233, 233, 233), 0px 0px 16px 0px rgba(0,0,0,0.32);
-    -moz-box-shadow: 0px 0px 0px 10px rgb(233, 233, 233), 0px 0x 16px 0px rgba(0,0,0,0.32);
-    box-shadow: 0px 0px 0px 10px rgb(233, 233, 233), 0px 0px 16px 0px rgba(0,0,0,0.32);
+
+    border-left: 15px solid;
 
     transition: transform .6s; /* Animation off */
     transform: scale(1);
@@ -44,4 +41,18 @@
 
 .status-container{
     font-size: 1em;
+}
+
+
+.status-pod-fully-operational{
+    border-color: #6FCF97;
+}
+.status-pod-semi-operational{
+    border-color: #FFC42D;
+}
+.status-pod-offline{
+    border-color: #ff3157;
+}
+.status-pod-unknown{
+    border-color: #000000;
 }

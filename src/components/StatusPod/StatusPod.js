@@ -21,7 +21,14 @@ function StatusPod({ statusPod, setSelectedPod, setShowPodModal }) {
   }, [])
 
   return (
-    <div className='status-pod'>
+    <div className={
+      placeHolderValue === 1 ? 'status-pod status-pod-fully-operational shadow' :
+      placeHolderValue === 2 ? 'status-pod status-pod-semi-operational shadow' :
+      placeHolderValue === 3 ? 'status-pod status-pod-offline shadow' :
+      "status-pod status-pod-unknown shadow"
+    }
+    
+    >
       <h2 className=''>{statusPod.parent}</h2>
       <p>{statusPod.pods.length} Services</p>
       <br />
@@ -46,12 +53,6 @@ function StatusPod({ statusPod, setSelectedPod, setShowPodModal }) {
         min={0}
         max={100}
         animated
-        className={
-          placeHolderValue === 1 ? 'progress status-live' :
-            placeHolderValue === 2 ? 'progress-warning ' :
-              placeHolderValue === 3 ? 'progress-offline ' :
-                "progress-unknown"
-        }
 
         striped variant={
           placeHolderValue == 1 ? 'success' :
