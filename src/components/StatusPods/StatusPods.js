@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import StatusPod from '../StatusPod/StatusPod'
-import { Button, Button as button, Modal } from 'react-bootstrap'
+import { Button, Button as button, CloseButton, Modal } from 'react-bootstrap'
 import { motion, AnimatePresence } from "framer-motion"
 import "./StatusPods.css"
 import StatusList from '../StatusList/StatusList'
@@ -34,13 +34,16 @@ function StatusPods({ statusPods, }) {
         {selectedPod &&
           <>
             <div className="card text-center shadow">
-              <div className="card-header"> </div>
+              <div className="card-header">
+                <CloseButton onClick={handleClosePodModal}/>
+                </div>
               <div className="card-body">
+                <h2>{selectedPod.parent}</h2>
               <AnimatePresence>
                 {selectedPod && (
                   <motion.div layoutId={selectedPod.id} className="selected-pod">
                     <StatusList statusList={selectedPod.pods}/>
-                    <motion.button onClick={handleClosePodModal} variant="primary" className='btn shadow'>
+                    <motion.button onClick={handleClosePodModal} variant="primary" className='btn shadow modal-close'>
                       Close
                     </motion.button>
                   </motion.div>

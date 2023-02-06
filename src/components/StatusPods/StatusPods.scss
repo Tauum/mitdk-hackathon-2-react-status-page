@@ -15,6 +15,11 @@
 
 	box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.384);
 	background-color: white;
+
+	.btn {
+		background-color: #fd4365;
+		color: white;
+	}
 }
 
 ul{
@@ -22,3 +27,9 @@ ul{
 	margin: 0;
 	padding: 0;
 }
+
+.modal-close{
+    background-color: #fd4365;
+    color: white;
+}
+

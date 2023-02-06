@@ -10,9 +10,18 @@
   box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.384);
   background-color: white;
 }
+.status-pods .btn {
+  background-color: #fd4365;
+  color: white;
+}
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.modal-close {
+  background-color: #fd4365;
+  color: white;
 }/*# sourceMappingURL=StatusPods.css.map */
