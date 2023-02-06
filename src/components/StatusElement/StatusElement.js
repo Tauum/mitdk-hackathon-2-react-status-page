@@ -1,41 +1,42 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./StatusElement.css"
+import { faCircleCheck, faCircleExclamation, faCircleQuestion, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
 
-function StatusElement({id, container, statusCode, message, timeStamp}) {
-  
+function StatusElement({ id, container, statusCode, message, timeStamp }) {
+
   const handleNotify = () => {
 
   }
-  
+
   return (
-    <li
-
-    className={
-      statusCode == 200 ? 'status status-live' : 
-      statusCode == 403 ? 'status status-warning ' :
-      statusCode == 500 ? 'status status-offline ' : "status status-unknown"
-    }
-
+    <li 
+    className='status'
     >
-      {/* <small>{id}</small> */}
-      <h2 className='status-container'>{container}</h2>    
+      <h2 className='status-container'>{container}</h2>
+      <br/>
+      {
+        statusCode == 200 ? <FontAwesomeIcon icon={faCircleCheck} color="green" size="2x" /> :
+        statusCode == 500 ? <FontAwesomeIcon icon={faCircleQuestion} color="orange" size="2x" /> :
+        statusCode == 403 ? <FontAwesomeIcon icon={faCircleXmark} size="2x" /> :
+        <FontAwesomeIcon icon={faCircleExclamation} color="red" size="2x" />
+        }
       <p>
-        Current status:
-        &nbsp;
-        {statusCode != "" ? statusCode : "unknown" }
+        {statusCode != "" ? statusCode : "unknown"}
       </p>
+
       <p>{message}</p>
       <small>
         {timeStamp}
       </small>
-      <br/>
+      <br />
 
-      {statusCode != 200 ? 
+      {statusCode != 200 ?
         <Button onClick={handleNotify} className="shadow btn" variant="light">
           notify on change
-        </Button> 
+        </Button>
         :
         <div></div>
       }
