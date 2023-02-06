@@ -2,19 +2,16 @@ import React, { useEffect, useState } from 'react'
 import { Button, ProgressBar } from 'react-bootstrap'
 import "./StatusPod.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck, faCircleExclamation, faCircleQuestion, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck, faCircleExclamation, faCircleQuestion, faCircleXmark, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
+import StatusList from '../StatusList/StatusList';
 
-function StatusPod({ statusPod, setSelectedPod, setShowPodModal }) {
+function StatusPod({ statusPod }) {
 
   const [placeHolderValue, setplaceHolderValue] = useState(0)
-
   const [showChildrenList, setShowChildrenList] = useState(false)
-
-  const loadModal = () => {
-    // setSelectedPod(statusPod)
-    // setShowPodModal(true)
-
-    setShowChildrenList(true)
+  
+  const handleNotify = () => {
+      // bla bla bla do request to enable a notification for this container
   }
 
   const getRandomInt = (max) => {
@@ -41,15 +38,14 @@ function StatusPod({ statusPod, setSelectedPod, setShowPodModal }) {
 
           <h2 className=''>{statusPod.parent}</h2>
           <p>{statusPod.pods.length} Services</p>
-          <br />
           <p>
             Overall health status:
             <br /><br />
             {
               placeHolderValue == 1 ? <FontAwesomeIcon icon={faCircleCheck} color="green" size="xl" /> :
-                placeHolderValue == 2 ? <FontAwesomeIcon icon={faCircleQuestion} color="orange" size="xl" /> :
-                  placeHolderValue == 3 ? <FontAwesomeIcon icon={faCircleXmark} size="xl" color='red' /> :
-                    <FontAwesomeIcon icon={faCircleExclamation} color="black" size="xl" />
+              placeHolderValue == 2 ? <FontAwesomeIcon icon={faCircleQuestion} color="orange" size="xl" /> :
+                placeHolderValue == 3 ? <FontAwesomeIcon icon={faTriangleExclamation} color='red' size="xl" /> :
+                  <FontAwesomeIcon icon={faCircleXmark} color="black" size="xl" />
             }
             {
               placeHolderValue === 1 ? ' Fully Operational' :
@@ -82,14 +78,16 @@ function StatusPod({ statusPod, setSelectedPod, setShowPodModal }) {
 
         : 
 
-        <div>
-
-        </div>
+        <StatusList statusList={statusPod.pods} />
       }
 
       <br />
-      <Button className="shadow btn" variant="light" onClick={() => {setShowChildrenList(!showChildrenList)}}>
-        View components
+      <Button className="shadow btn red-button" variant="light" onClick={() => {setShowChildrenList(!showChildrenList)}}>
+        { !showChildrenList ? "Show Components" : "Close" }
+      </Button>
+      <br/>
+      <Button onClick={handleNotify} className="shadow btn" variant="secondary">
+        Enable Notification
       </Button>
     </div>
 

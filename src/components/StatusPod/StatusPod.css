@@ -1,7 +1,7 @@
 .status-pod {
   margin: 1em;
   padding: 1rem;
-  min-height: 170px;
+  height: 379px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -13,8 +13,7 @@ function StatusList({ statusList }) {
 			{statusList?.map((status, x) => (
 				<StatusElement
 					key={x}
-					id={status.id}
-					container={status.container}
+					service={status.service}
 					statusCode={status.statusCode}
 					timeStamp={status.timeStamp}
 					className="shadow"

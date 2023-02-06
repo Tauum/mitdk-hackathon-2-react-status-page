@@ -63,6 +63,11 @@ body {
 }
 
 .dark-mode .app-container 
+.status-pod{
+	background-color: rgb(116, 116, 116);
+}
+
+.dark-mode .app-container 
 .status-previous-list{
 	background-color: rgb(90, 86, 86);
 }

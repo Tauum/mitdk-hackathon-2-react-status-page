@@ -2,42 +2,29 @@ import React from 'react'
 import { Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./StatusElement.css"
-import { faCircleCheck, faCircleExclamation, faCircleQuestion, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck, faCircleExclamation, faCircleQuestion, faCircleXmark, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 
 
-function StatusElement({ id, container, statusCode, timeStamp }) {
-
-  const handleNotify = () => {
-
-  }
+function StatusElement({ id, service, statusCode, timeStamp }) {
 
   return (
     <li 
     className='status'
     >
-      <h2 className='status-container'>{container}</h2>
-      <br/>
-      {
-        statusCode == 200 ? <FontAwesomeIcon icon={faCircleCheck} color="green" size="2x" /> :
-        statusCode == 500 ? <FontAwesomeIcon icon={faCircleQuestion} color="orange" size="2x" /> :
-        statusCode == 403 ? <FontAwesomeIcon icon={faCircleXmark} size="2x" /> :
-        <FontAwesomeIcon icon={faCircleExclamation} color="red" size="2x" />
+      <div className='status-top'>
+        <h2 className='status-container'>{service} </h2>
+        {
+        statusCode == 200 ? <FontAwesomeIcon icon={faCircleCheck} color="green" size="2x" className='icon'/> :
+        statusCode == 500 ? <FontAwesomeIcon icon={faCircleQuestion} color="orange" size="2x" className='icon'/> :
+        statusCode == 403 ? <FontAwesomeIcon icon={faTriangleExclamation} color="red" size="2x" className='icon'/> :
+        <FontAwesomeIcon icon={faCircleXmark} color="black" size="2x" className='icon'/>
         }
-      <p>
-        {statusCode != "" ? statusCode : "unknown"}
-      </p>
+      </div>
+     
       <small>
         {timeStamp}
       </small>
       <br />
-
-      {statusCode != 200 ?
-        <Button onClick={handleNotify} className="shadow btn" variant="light">
-          notify on change
-        </Button>
-        :
-        <div></div>
-      }
     </li>
   )
 }

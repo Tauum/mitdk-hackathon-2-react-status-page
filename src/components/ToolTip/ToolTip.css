@@ -76,12 +76,12 @@
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: 80%;
+  top: 76.5%;
   margin-left: -70px;
 }
 
 .type-fully-operational {
-  background-color: #b4fe8a;
+  background-color: #6FCF97;
 }
 
 .type-fully-operational:hover .tooltiptext {
@@ -89,7 +89,7 @@
 }
 
 .type-semi-operational {
-  background-color: #fef68a;
+  background-color: #FFC42D;
 }
 
 .type-semi-operational:hover .tooltiptext {
@@ -97,7 +97,7 @@
 }
 
 .type-offline {
-  background-color: #fea18a;
+  background-color: #ff3157;
 }
 
 .type-offline:hover .tooltiptext {
@@ -105,7 +105,7 @@
 }
 
 .type-unknown {
-  background-color: #b6b6b6;
+  background-color: #000000;
 }
 
 .type-unknown:hover .tooltiptext {
@@ -118,4 +118,4 @@
 
 .type-reset:hover .tooltiptext {
   visibility: visible;
-}/*# sourceMappingURL=StatusSearch.css.map */
+}/*# sourceMappingURL=ToolTip.css.map */
