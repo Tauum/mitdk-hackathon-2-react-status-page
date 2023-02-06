@@ -37,8 +37,29 @@
 	justify-content: space-between;
 }
 
-.input-range{
+.search-type-range > *{
 	width: 100%;
+}
+
+.search-type-fully-reset{
+	accent-color: #ffffff;
+	background-color: black;
+}
+.search-type-fully-operational{
+	accent-color: #7ff550;
+	background-color: white;
+}
+.search-type-semi-operational{
+	accent-color: #f5e550;
+	background-color: white;
+}
+.search-type-offline{
+	accent-color: #f5e550;
+	background-color: white;
+}
+.search-type-unknown{
+	accent-color: black;
+	background-color: white;
 }
 
 
