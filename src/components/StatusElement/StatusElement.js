@@ -20,12 +20,12 @@ function StatusElement({id, container, statusCode, message, timeStamp}) {
 
     >
       {/* <small>{id}</small> */}
-      <h1 className='status-container'>{container}</h1>    
-      <h2>
+      <h2 className='status-container'>{container}</h2>    
+      <p>
         Current status:
         &nbsp;
         {statusCode != "" ? statusCode : "unknown" }
-      </h2>
+      </p>
       <p>{message}</p>
       <small>
         {timeStamp}

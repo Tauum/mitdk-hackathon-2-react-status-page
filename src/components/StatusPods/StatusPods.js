@@ -15,6 +15,9 @@ function StatusPods({ statusPods, }) {
     setSelectedPod(false)
   };
 
+  const [searchText, setSearchText] = useState('');
+	const [searchType, setSearchType] = useState(false);
+
   return (
 
     <div className='status-pods'>
@@ -38,6 +41,11 @@ function StatusPods({ statusPods, }) {
                 <CloseButton onClick={handleClosePodModal}/>
                 </div>
               <div className="card-body">
+                  {/* <StatusSearch
+                  handleSearchStatus={setSearchText}
+                  handleSearchType={setSearchType}
+                  /> */}
+
                 <h2>{selectedPod.parent}</h2>
               <AnimatePresence>
                 {selectedPod && (

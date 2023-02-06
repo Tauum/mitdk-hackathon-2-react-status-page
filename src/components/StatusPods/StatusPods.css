@@ -24,4 +24,8 @@ ul {
 .modal-close {
   background-color: #fd4365;
   color: white;
+}
+
+.card-header > * {
+  float: right;
 }/*# sourceMappingURL=StatusPods.css.map */

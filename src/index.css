@@ -17,7 +17,6 @@ body {
 
 .app-container{
 	background-color: #ff3157;
-	/* background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(237,24,24,1) 0%, rgba(255,49,87,1) 100%); */
 	background-repeat: none;
 	padding-bottom: 4em;
 	overflow: hidden;
