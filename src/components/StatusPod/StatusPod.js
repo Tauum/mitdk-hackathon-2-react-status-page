@@ -3,13 +3,18 @@ import { Button, ProgressBar } from 'react-bootstrap'
 import "./StatusPod.css"
 
 
-function StatusPod({ statusPod, selectedPod }) {
+function StatusPod({ statusPod, setSelectedPod, setShowPodModal}) {
 
   const getRandomInt = (max) => {
     return Math.floor(Math.random() * max);
   }
 
   var placeholderVal = getRandomInt(4)
+
+  const loadModal = () => {
+    setSelectedPod(statusPod)
+    setShowPodModal(true)
+  }
 
   // const reduced = statusPod.pods //bind this to the aggregated status codes
   // lets say fully-operational is 10
@@ -60,11 +65,9 @@ function StatusPod({ statusPod, selectedPod }) {
       />
 
       <br />
-      {selectedPod === null &&
-        <Button className="shadow btn" variant="light">
+        <Button className="shadow btn" variant="light" onClick={loadModal}>
           View components
         </Button>
-      }
     </div>
 
   )
