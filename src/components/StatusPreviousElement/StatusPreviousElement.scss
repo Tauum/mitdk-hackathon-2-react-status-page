@@ -4,28 +4,27 @@
   color: black;
 
   .faq-content{
-
-      max-width: 600px;
-      padding: 0;
-      margin: 0 auto;
-      text-align: center;
+    max-width: 600px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
   }
   .faq-text{
-      padding: 0;
-      padding-left:2em;
-      padding-right:2em;
-      margin: 2em auto;
+    padding: 0;
+    padding-left:2em;
+    padding-right:2em;
+    margin: 2em auto;
   }
   .terms-links{
-      display: flex;
-      margin: 0 auto;
-      .terms-links > *{
-          background-color:pink;
-      }
+    display: flex;
+    margin: 0 auto;
+    .terms-links > *{
+        background-color:pink;
+    }
   }
 
   p{
-      color: black;
+    color: black;
   }
   .card{
     .previous-status-content > *{

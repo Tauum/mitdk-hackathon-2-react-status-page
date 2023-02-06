@@ -1,33 +1,35 @@
 .status-search-container{
-	margin-top: 2em;
+	// background-color: rgb(233, 233, 233);
+	margin-top: 3em;
 }
 
-.search {
+.search-type-tool-tip{
 	display: flex;
 	align-items: center;
-	background-color: rgb(233, 233, 233);
 	border-radius: 10px;
-	padding: 5px;
-	max-width: 500px;
-	margin: 2em auto;
-	margin-top: 0;
+	padding: 8px;
+	max-width: 270px;
+	margin: auto;
 	color: black;
+	justify-content: space-between;
+
+	.type-element{
+		border-radius: 10px;
+		padding: 5px;
+		width: 40px;
+		height: 40px;
+		margin-top: 0;
+		color: black;
+		justify-content: space-between;
+		border: 2px solid;
+		border-color: #ffffff;
+		text-align: center;
+	}
 }
 
-.search input {
-	border: none;
-	background-color: rgb(233, 233, 233);
-	width: 100%;
-}
-
-.search input:focus {
-	outline: none;
-}
-
-.search-type{
+.search-type-range {
 	display: flex;
 	align-items: center;
-	background-color: rgb(233, 233, 233);
 	border-radius: 10px;
 	padding: 8px;
 	max-width: 270px;
@@ -36,43 +38,38 @@
 	color: black;
 	justify-content: space-between;
 }
-
 .search-type-range > *{
 	width: 100%;
 }
 
-.search-type-fully-reset{
+
+.search-type-fully-reset {
 	accent-color: #ffffff;
-	background-color: black;
-}
-.search-type-fully-operational{
+	background-color: white;
+  }
+  
+  .search-type-fully-operational {
 	accent-color: #7ff550;
 	background-color: white;
-}
-.search-type-semi-operational{
+  }
+  
+  .search-type-semi-operational {
 	accent-color: #f5e550;
 	background-color: white;
-}
-.search-type-offline{
-	accent-color: #f5e550;
+  }
+  
+  .search-type-offline {
+	accent-color: #ff3157;
 	background-color: white;
-}
-.search-type-unknown{
-	accent-color: black;
+  }
+  
+  .search-type-unknown {
+	accent-color: #b6b6b6;
 	background-color: white;
-}
+  }
+  
 
 
-.type-element{
-	border-radius: 10px;
-	padding: 5px;
-	max-width: 40px;
-	margin-top: 0;
-	color: black;
-	justify-content: space-between;
-	border: 2px solid;
-	border-color: #ffffff;
-}
 
 .tooltiptext {
 	visibility: hidden;
@@ -85,7 +82,7 @@
   
 	position: absolute;
 	z-index: 1;
-	top: 75%;
+	top: 80%;
 	margin-left: -70px;
 }
 
@@ -94,28 +91,28 @@
 }
 .type-fully-operational:hover .tooltiptext {
 	visibility: visible;
-  }
+}
 .type-semi-operational{	
 	background-color: #fef68a;
 }
 .type-semi-operational:hover .tooltiptext {
 	visibility: visible;
-  }
+}
 .type-offline{
 	background-color: #fea18a;
 }
 .type-offline:hover .tooltiptext {
 	visibility: visible;
-  }
+}
 .type-unknown{
 	background-color: #b6b6b6;
 }
 .type-unknown:hover .tooltiptext {
 	visibility: visible;
-  }
+}
 .type-reset{
 	background-color: #ffffff;
 }
 .type-reset:hover .tooltiptext {
 	visibility: visible;
-  }
+}

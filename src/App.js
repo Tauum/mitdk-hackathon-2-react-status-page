@@ -18,8 +18,6 @@ const App = () => {
 	const [previousSearchDate, setPreviousSearchDate] = useState('');
 	const [previousSearchType, setPreviousSearchType] = useState(false);
 
-	
-
     const [radioValue, setRadioValue] = useState('1');
 	
     const [statusPods, setStatusPods] = useState([])
