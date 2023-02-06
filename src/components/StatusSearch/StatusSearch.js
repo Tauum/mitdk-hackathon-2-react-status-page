@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { MdSearch } from 'react-icons/md';
 import "./StatusSearch.css"
 
 const Search = ({ handleSearchType }) => {
@@ -15,23 +14,23 @@ const Search = ({ handleSearchType }) => {
 		<div className='status-search-container'
 			onChange={(event) => handleSearchType(event.target.value)}>
 			<div className='search-type-tool-tip'>
-				<div className="type-element type-reset">
+				<div className="type-element type-reset shadow">
 					<span className="tooltiptext">Reset status</span>
 				</div>
 
-				<div className="type-element type-fully-operational">
+				<div className="type-element type-fully-operational shadow">
 					<span className="tooltiptext">Only show fully operational services</span>
 				</div>
 
-				<div className="type-element type-semi-operational">
+				<div className="type-element type-semi-operational shadow">
 					<span className="tooltiptext">Only show semi operational services</span>
 				</div>
 
-				<div className="type-element type-offline">
+				<div className="type-element type-offline shadow">
 					<span className="tooltiptext">Only show offline services</span>
 				</div>
 
-				<div className="type-element type-unknown">
+				<div className="type-element type-unknown shadow">
 					<span className="tooltiptext">Only show unknown services</span>
 				</div>
 			</div>
@@ -40,11 +39,11 @@ const Search = ({ handleSearchType }) => {
 				<input type="range"
 					className=
 					{
-						searchTypeValue == 0 ? "search-type-fully-reset" :
-							searchTypeValue == 1 ? "search-type-fully-operational" :
-								searchTypeValue == 2 ? "search-type-semi-operational" :
-									searchTypeValue == 3 ? "search-type-offline" :
-										"search-type-unknown"
+						searchTypeValue == 0 ? "search-type-fully-reset shadow" :
+							searchTypeValue == 1 ? "search-type-fully-operational shadow" :
+								searchTypeValue == 2 ? "search-type-semi-operational shadow" :
+									searchTypeValue == 3 ? "search-type-offline shadow" :
+										"search-type-unknown shadow"
 					}
 
 					min="0" max="4" step="1"
