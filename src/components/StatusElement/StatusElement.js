@@ -5,7 +5,7 @@ import "./StatusElement.css"
 import { faCircleCheck, faCircleExclamation, faCircleQuestion, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
 
-function StatusElement({ id, container, statusCode, message, timeStamp }) {
+function StatusElement({ id, container, statusCode, timeStamp }) {
 
   const handleNotify = () => {
 
@@ -26,8 +26,6 @@ function StatusElement({ id, container, statusCode, message, timeStamp }) {
       <p>
         {statusCode != "" ? statusCode : "unknown"}
       </p>
-
-      <p>{message}</p>
       <small>
         {timeStamp}
       </small>

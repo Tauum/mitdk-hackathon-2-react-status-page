@@ -33,7 +33,7 @@ function StatusPods({ statusPods, }) {
         </motion.li>
       ))}
 
-      <Modal className="modal" show={showPodModal} onHide={handleClosePodModal} centered backdrop="static">
+      {/* <Modal className="modal" show={showPodModal} onHide={handleClosePodModal} centered backdrop="static">
         {selectedPod &&
           <>
             <div className="card text-center shadow">
@@ -55,7 +55,7 @@ function StatusPods({ statusPods, }) {
               </div>
             </div>
           </>}
-      </Modal>
+      </Modal> */}
 
     </div>
   )

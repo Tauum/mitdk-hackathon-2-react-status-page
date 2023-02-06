@@ -16,7 +16,6 @@ function StatusList({ statusList }) {
 					id={status.id}
 					container={status.container}
 					statusCode={status.statusCode}
-					message={status.message}
 					timeStamp={status.timeStamp}
 					className="shadow"
 				/>

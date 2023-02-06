@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import { Button, ProgressBar } from 'react-bootstrap'
 import "./StatusPod.css"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleCheck, faCircleExclamation, faCircleQuestion, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
 function StatusPod({ statusPod, setSelectedPod, setShowPodModal }) {
 
   const [placeHolderValue, setplaceHolderValue] = useState(0)
 
+  const [showChildrenList, setShowChildrenList] = useState(false)
+
   const loadModal = () => {
-    setSelectedPod(statusPod)
-    setShowPodModal(true)
+    // setSelectedPod(statusPod)
+    // setShowPodModal(true)
+
+    setShowChildrenList(true)
   }
 
   const getRandomInt = (max) => {
@@ -23,47 +28,67 @@ function StatusPod({ statusPod, setSelectedPod, setShowPodModal }) {
   return (
     <div className={
       placeHolderValue === 1 ? 'status-pod status-pod-fully-operational shadow' :
-      placeHolderValue === 2 ? 'status-pod status-pod-semi-operational shadow' :
-      placeHolderValue === 3 ? 'status-pod status-pod-offline shadow' :
-      "status-pod status-pod-unknown shadow"
+        placeHolderValue === 2 ? 'status-pod status-pod-semi-operational shadow' :
+          placeHolderValue === 3 ? 'status-pod status-pod-offline shadow' :
+            "status-pod status-pod-unknown shadow"
     }
-    
+
     >
-      <h2 className=''>{statusPod.parent}</h2>
-      <p>{statusPod.pods.length} Services</p>
-      <br />
-      <p>
-        Overall health status:
-        <br /> <br />
-        {
-          placeHolderValue === 1 ? ' Fully Operational' :
-            placeHolderValue === 2 ? ' Semi Operational' :
-              placeHolderValue === 3 ? ' Downtime' :
-                " Unknown"
-        }
-      </p>
 
-      <ProgressBar now={
-        placeHolderValue === 1 ? 100 :
-          placeHolderValue === 2 ? 75 :
-            placeHolderValue === 3 ? 50 :
-              placeHolderValue === 4 ? 25 :
-                0
+      {
+        !showChildrenList ?
+        <>
+
+          <h2 className=''>{statusPod.parent}</h2>
+          <p>{statusPod.pods.length} Services</p>
+          <br />
+          <p>
+            Overall health status:
+            <br /><br />
+            {
+              placeHolderValue == 1 ? <FontAwesomeIcon icon={faCircleCheck} color="green" size="xl" /> :
+                placeHolderValue == 2 ? <FontAwesomeIcon icon={faCircleQuestion} color="orange" size="xl" /> :
+                  placeHolderValue == 3 ? <FontAwesomeIcon icon={faCircleXmark} size="xl" color='red' /> :
+                    <FontAwesomeIcon icon={faCircleExclamation} color="black" size="xl" />
+            }
+            {
+              placeHolderValue === 1 ? ' Fully Operational' :
+                placeHolderValue === 2 ? ' Semi Operational' :
+                  placeHolderValue === 3 ? ' Downtime' :
+                    " Unknown"
+            }
+          </p>
+          <br />
+          <ProgressBar now={
+            placeHolderValue === 1 ? 100 :
+              placeHolderValue === 2 ? 75 :
+                placeHolderValue === 3 ? 50 :
+                  placeHolderValue === 4 ? 25 :
+                    0
+          }
+            min={0}
+            max={100}
+            animated
+
+            striped variant={
+              placeHolderValue == 1 ? 'success' :
+                placeHolderValue == 2 ? 'warning' :
+                  placeHolderValue == 3 ? 'danger' :
+                    "info"
+            }
+          />
+
+        </>
+
+        : 
+
+        <div>
+
+        </div>
       }
-        min={0}
-        max={100}
-        animated
-
-        striped variant={
-          placeHolderValue == 1 ? 'success' :
-            placeHolderValue == 2 ? 'warning' :
-              placeHolderValue == 3 ? 'danger' :
-                "info"
-        }
-      />
 
       <br />
-      <Button className="shadow btn" variant="light" onClick={loadModal}>
+      <Button className="shadow btn" variant="light" onClick={() => {setShowChildrenList(!showChildrenList)}}>
         View components
       </Button>
     </div>
