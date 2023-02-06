@@ -38,7 +38,7 @@ function StatusPods({ statusPods, }) {
               <div className="card-body">
               <AnimatePresence>
                 {selectedPod && (
-                  <motion.div layoutId={1} className="selected-pod">
+                  <motion.div layoutId={selectedPod.id} className="selected-pod">
                     <StatusList statusList={selectedPod.pods}/>
                     <motion.button onClick={handleClosePodModal} variant="primary" className='btn shadow'>
                       Close
