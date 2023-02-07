@@ -13,6 +13,7 @@ function StatusPreviousList({previousStatusList}) {
 					title={previousStatus.title}
 					message={previousStatus.message}
 					timeStamp={previousStatus.timeStamp}
+					severity={previousStatus.severity}
 				/>
 			))}
     </ul>

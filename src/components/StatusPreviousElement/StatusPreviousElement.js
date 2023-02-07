@@ -3,7 +3,7 @@ import { Accordion, Button, Card } from 'react-bootstrap'
 import CustomToggle from './CustomToggle'
 import "./StatusPreviousElement.css"
 
-function StatusPreviousElement({ id, title, message, timeStamp }) {
+function StatusPreviousElement({ id, title, message, timeStamp, severity }) {
   return (
     <div>
       <Accordion className="shadow previous-status-accordian" >
@@ -11,7 +11,7 @@ function StatusPreviousElement({ id, title, message, timeStamp }) {
           <Card.Header>
 
             {/* bind this toggle colour to the severity of the status update */}
-            <CustomToggle eventKey="0">{title} - {timeStamp}</CustomToggle>
+            <CustomToggle backgroundColor={severity} eventKey="0">{title} - {timeStamp}</CustomToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
             <Card.Body className='previous-status-content'>

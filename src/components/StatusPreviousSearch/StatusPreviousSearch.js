@@ -1,10 +1,9 @@
 import React from 'react'
 
-const StatusPreviousSearch = ({ handlePreviousSearchDate }) => {
+const StatusPreviousSearch = ({ }) => {
 
         return (             
-			<div className='search-type'
-				onChange={(event) => handlePreviousSearchDate(event.target.value) }>
+			<div className='search-type'>
 				<input type="date"/>
 			</div>
         );

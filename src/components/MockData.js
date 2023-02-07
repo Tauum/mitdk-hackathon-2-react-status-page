@@ -118,30 +118,14 @@ export const statusData =
 
 export const previousStatusData =
 [
-    {id: 1, title:"Severe downtime", message:"Fully operational", severity:"5" },
-    {id: 2, title:"Minor maintainance", message:"Fully operational", severity:"2" },
-    {id: 3, title:"Inoperable sign-in", message:"Fully operational", severity:"4" },
-    {id: 4, title:"Scheduled downtime", message:"Fully operational", severity:"1" },
-    {id: 5, title:"Unexpected downtime", message:"Fully operational", severity:"3" },
-]
-
-export const statusListData =
-[
-    {id: 1, title:"Severe downtime", message:"Fully operational", timeStamp:"2022-01-01:04:01:01", severity:"5" },
-    {id: 2, title:"Minor maintainance", message:"Fully operational", timeStamp:"2022-01-01:04:01:01", severity:"2" },
-    {id: 3, title:"Inoperable sign-in", message:"Fully operational", timeStamp:"2022-01-01:04:01:01", severity:"4" },
-    {id: 4, title:"Scheduled downtime", message:"Fully operational", timeStamp:"2022-01-01:04:01:01", severity:"1" },
-    {id: 5, title:"Unexpected downtime", message:"Fully operational", timeStamp:"2022-01-01:04:01:01", severity:"3" },
-    {id: 6, service:"User-profile-store", statusCode:"500", message:"Offline", timeStamp:"2022-01-01:04:06:05" },
-    {id: 7, service:"User-profile-index", statusCode:"", message:"Unknown", timeStamp:"2022-01-01:04:06:05" },
-    {id: 8, service:"User-profile-reindexer", statusCode:"200", message:"Fully operational", timeStamp:"2022-01-01:04:06:05" },
-    {id: 9, service:"User-profile-reindexer", statusCode:"200", message:"Fully operational", timeStamp:"2022-01-01:04:06:05" },
-    {id: 10, service:"Mailbox-store", statusCode:"200", message:"Fully operational", timeStamp:"2022-01-01:04:06:05" },
-    {id: 11, service:"Mailbox-index", statusCode:"200", message:"Fully operational", timeStamp:"2022-01-01:04:06:05" },
-    {id: 12, service:"Mailbox-reindexer", statusCode:"200", message:"Fully operational", timeStamp:"2022-01-01:04:06:05" },
-    {id: 13, service:"Auth-server", statusCode:"200", message:"Fully operational", timeStamp:"2022-01-01:04:01:01" },
-    {id: 14, service:"Identity-registry-index", statusCode:"403", message:"Semi operational", timeStamp:"2022-01-01:04:04:02" },
-    {id: 15, service:"Identity-registry-service", statusCode:"", message:"Unknown", timeStamp:"2022-01-01:04:04:02" },
-    {id: 16, service:"Identity-registry-Store", statusCode:"200", message:"Fully operational", timeStamp:"2022-01-01:04:04:02" },
-    {id: 17, service:"Gateway", statusCode:"200", message:"Fully operational", timeStamp:"2022-01-01:04:04:02" },
+    {id: 1, title:"Severe downtime", message:"There is a situation in the platform where multiple services are currently unavailable and not functioning as expected. This means that users are unable to access these services and use them as they normally would. The cause of the issue is currently unknown, but the platform's technical team is working to identify and resolve the problem as soon as possible. It is important to note that unexpected downtime like this can happen in any platform and is not uncommon. The technical team is doing their best to restore the services and get them back online as quickly as they can. In the meantime, users may need to find alternative solutions or workarounds to complete their tasks. The platform will continue to monitor the situation and provide updates as more information becomes available. We apologize for any inconvenience this unexpected downtime may have caused."
+    , timeStamp:"2023-01-01:04:01:01", severity:"5" },
+    {id: 2, title:"Minor maintainance", message:"The platform is currently undergoing some minor maintenance to improve the performance and stability of its non-critical features. This means that certain parts of the platform that are not critical to its core functionality may be temporarily unavailable during this time. The maintenance is being performed to resolve any underlying issues and to ensure that the platform continues to function smoothly for all users. The downtime is expected to be minimal and the technical team is working to complete the maintenance as quickly as possible. It is important to note that the platform's critical features and services remain available during this time.",
+     timeStamp:"2023-01-01:04:01:01", severity:"2" },
+    {id: 3, title:"Inoperable sign-in", message:"There is an issue with the sign-in functionality for some users in the platform. It is important to note that not all users are affected by this issue, only a portion of users are experiencing difficulties with the sign-in process. The technical team is aware of the issue and has deployed engineers to investigate and resolve the problem. The engineers are working to identify the cause of the issue and to restore the sign-in functionality for affected users as soon as possible. The platform will continue to monitor the situation and provide updates as more information becomes available. In the meantime, users who are experiencing difficulties with the sign-in process should contact the platform's support team for assistance. We apologize for any inconvenience this issue may have caused and appreciate your patience while the engineers work to resolve the problem.",
+     timeStamp:"2023-01-01:04:01:01", severity:"4" },
+    {id: 4, title:"Unexpected downtime", message:"There is an unexpected issue with some critical features of the platform, causing them to be unavailable at this time. The technical team is aware of the situation and is actively working to resolve the problem and restore the affected features as soon as possible. The cause of the downtime is currently being investigated and the team is making every effort to minimize the impact on users. In the meantime, it is possible that some tasks and operations may be disrupted or limited. The platform will continue to provide updates on the situation as more information becomes available. We understand the inconvenience this unexpected downtime may cause and appreciate your patience while we work to restore the affected features. If you are experiencing any issues, please reach out to the platform's support team for assistance.",
+     timeStamp:"2022-12-31:10:18:17", severity:"3" },
+    {id: 5, title:"Scheduled downtime", message:"Several services within the platform are currently offline for maintenance. This means that the platform is undergoing some necessary updates, fixes, or improvements, and as a result, these services are temporarily unavailable for users. Maintenance is a routine process that is done to ensure the smooth functioning and performance of the platform. During this time, the technical team is working to improve the services and resolve any underlying issues. The downtime is expected and has been planned in advance to minimize any disruption to users. It is important to note that the maintenance is being carried out to ensure the long-term stability and reliability of the platform. The platform will continue to monitor the progress of the maintenance and provide updates as more information becomes available."
+     ,timeStamp:"2022-06-07:09:07:54", severity:"1" },
 ]

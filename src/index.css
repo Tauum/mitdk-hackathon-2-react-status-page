@@ -46,38 +46,28 @@ body {
 .dark-mode {
 	color: white;
 }
-
 .dark-mode .app-container{
 	background-color: rgb(100, 95, 95);
-
 }
-
 .dark-mode .app-container .header{
 	background-color: rgb(61, 61, 61);
-
 }
-
-.dark-mode .app-container 
-.status-pods{
+.dark-mode .app-container .status-pods{
 	background-color: rgb(75, 72, 72);
 }
-
-.dark-mode .app-container 
-.status-pod{
+.dark-mode .app-container .status-pod{
 	background-color: rgb(116, 116, 116);
 }
-
-.dark-mode .app-container 
-.status-previous-list{
+.dark-mode .app-container .status-previous-list{
 	background-color: rgb(90, 86, 86);
 }
-
-.dark-mode .app-container 
-.status-list{
+.dark-mode .app-container .status-previous-list .previous-status-accordian .card{
+	background-color: rgb(75, 72, 72);
+	color: white;
+}
+.dark-mode .app-container .status-previous-list .previous-status-accordian .card .accordion-collapse .{
 	background-color: rgb(75, 72, 72);
 }
-
-
 
 .dark-mode-button {
 	background-color: #e1e1e1;
