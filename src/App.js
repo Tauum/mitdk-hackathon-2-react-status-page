@@ -5,16 +5,22 @@ import StatusInformation from './components/StatusInformation/StatusInformation'
 import StatusPreviousInformation from './components/StatusPreviousInformation/StatusPreviousInformation';
 import StatusPreviousList from './components/StatusPreviousList/StatusPreviousList';
 import StatusPods from './components/StatusPods/StatusPods';
-import { previousStatusData, statusData } from './components/MockData';
 import StatusPreviousSearch from './components/StatusPreviousSearch/StatusPreviousSearch';
+import { StrapiGetRequest } from './functionality/Request';
+import { previousStatusData } from './components/MockData';
 const App = () => {
 
 	const [darkMode, setDarkMode] = useState(false);
     const [statusPods, setStatusPods] = useState([])
     const [previousStatusList, setPreviousStatusList] = useState([])
 
-    useEffect(() => {
+	async function fetchData() {
+		const statusData = await StrapiGetRequest();
 		setStatusPods(statusData)
+	}
+
+    useEffect(() => {
+		const statusData = fetchData();
 		setPreviousStatusList(previousStatusData)
     },[])
 	
@@ -24,6 +30,7 @@ const App = () => {
 				<Header handleToggleDarkMode={setDarkMode} />
 				<StatusInformation/>
 				<ToolTip/>
+				{/* {console.log(statusPods)} */}
 				<StatusPods statusPods={statusPods} />
 				<StatusPreviousInformation/>
 				<StatusPreviousSearch/>

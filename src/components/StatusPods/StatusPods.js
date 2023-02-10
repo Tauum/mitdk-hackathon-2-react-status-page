@@ -7,6 +7,7 @@ function StatusPods({ statusPods, }) {
   return (
 
     <div className='status-pods'>
+      {console.log(statusPods)}
       {statusPods.map((statusPod, index) => (
         <li key={index} >
           <StatusPod key={index} statusPod={statusPod}/>

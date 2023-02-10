@@ -4,6 +4,7 @@ import "./StatusPod.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck, faCircleExclamation, faCircleQuestion, faCircleXmark, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 import StatusList from '../StatusList/StatusList';
+import { StrapiGetRequest } from '../../functionality/Request';
 
 function StatusPod({ statusPod }) {
 
